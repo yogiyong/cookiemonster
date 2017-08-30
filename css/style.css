@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	margin: 0;
+}
+header	{
+		text-transform: uppercase; 
+		letter-spacing: 3px; 
+		text-align: center;
+		color: white;
+		background: #e2cbb1 url(../images/header-bg.jpg) center;
+		background-size: cover;
+		padding: 30px;
+		margin-bottom: 30px;
+
+
+}
+h1 {font-weight: 300}
+
+a{ color: white;
+text-decoration: none
+}
+
+a:hover { color: red;	
+	background-color: yellow;
+	border-bottom: 1px solid white;
+}
+
+.container {
+	/*.container is the class that you created previously in the index html*/
+	/*border: 3px solid red;*/
+	width: 1000px; 
+	/*1000px are the empty spaces*/
+	margin: 0 auto;
+
+	/* Margin: 0 auto actually means the following;
+	margin-top:0
+	margin-bottom; 0
+	margin-left: auto
+	margin-right: auto
+	The auto */
+}
+
+.recipes {
+	width: 66.66%;
+	float: left;
+}
+
+.sidebar{
+	width: 33.33%;
+	float: right;
+	background-color: #e2c792;
+	padding: 20px;
+}
+
+article{
+	width: 50%;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*or your can write it as padding: 0 auto*/
+}
+
+article img {
+	width: 100%;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: grey;
+	padding: 30px;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	display: inline;
+	margin: 5px;
+}
+
+@media (max-width:1000px) {
+	.sidebar {
+		display: none;
+	}
+
+	.recipes, .container {
+		width: 100%;
+	}
+
+@media (max-width: 600px) {
+	article{
+		width: 100%;
+	}
+}
+
+}
